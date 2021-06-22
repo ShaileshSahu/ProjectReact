@@ -1,0 +1,35 @@
+
+input {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div .news-letter-form{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.news-letter-form input{
+    padding: 0.18rem;
+    margin-right: 0.4rem;
+    min-width: 16rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.news-letter {
+    background:white;
+    box-shadow: 1px 1px 1px solid;
+}
+
+.news-letter h5 {
+    font-weight: 400;
+    font-size: 10.1pt;
+    padding:2rem;
+    display: inline;
+    margin-top:2rem;
+    text-align: center;
+    margin:0.7rem;
+}
+

@@ -1,0 +1,73 @@
+.todoContainer {
+padding: 1rem;
+background: white;
+margin:2rem;
+}
+
+
+.todoContainer h2 {
+	color:white;
+	background:#c7c7c7fa;
+	padding: .2rem;
+	border-radius: 0 0 120rem;
+}
+
+
+.todoContainer form {
+	padding: 1rem;
+
+}
+
+.todoContainer div,input {
+display:inline;
+}
+
+.todoContainer input,select,button {
+ 	padding: 0.6rem;
+	margin: 0.2rem;
+	
+}
+
+.dark {
+text-align:center;
+padding:0.6rem;
+}
+
+.pending{
+	background: #f7f7f785;
+
+}
+.complete {
+	background: rgb(38, 175, 29,0.65);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQYV2Ps7u/5z4AGGNEFQHwKBQEQFwKra9o+gQAAAABJRU5ErkJggg==');
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+}
+
+.todoTable {
+min-width: 569px;
+}
+
+
+.high-badge{
+	padding:0.3rem;
+	color:white;
+	background: rgba(245, 79, 79, 0.808);
+	text-transform: capitalize;
+}
+
+.low-badge{
+	padding:0.3rem;
+	color:white;
+	background: rgba(137, 192, 255, 0.808);
+	text-transform: capitalize;
+
+}
+
+.medium-badge{
+	padding:0.3rem;
+	color:white;
+	background: rgba(245, 179, 79, 0.808);
+	text-transform: capitalize;
+
+}

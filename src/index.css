@@ -1,13 +1,238 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family:'Montserrat', sans-serif; 
+padding: 1rem;
+background: #f1f1f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.container {
+	display:flex;	
+        padding: 1rem;
 }
+
+
+h1,h2,h3 {
+color:#241524;
+font-weight:600;
+}
+
+.bold {
+font-weight: 900;
+}
+
+
+p {
+color: #846d84
+}
+
+
+.primary-link {
+ color: #440e44;
+ font-weight: 600;
+}
+
+.primary {
+color: #920e08;
+
+}
+.newContainer {
+max-width: 590px;
+}
+.uppercase {
+text-transform: uppercase;
+}
+
+.lowercase {
+text-transform: lowercase;
+}
+
+.capitalize {
+text-transaform: capitalize;
+}
+
+.dark{
+color: white;
+background:#383333;
+text-transform: uppercase;
+padding: 0.3rem;
+border:none;
+transition-duration: 0.4s;
+}
+
+.dark:hover {
+ color: black;
+ background:white;
+}
+
+
+table {
+border-collapse:collapse;
+padding: 1rem;
+margin-top: 1rem;
+font-size: .9rem;
+}
+
+table thead{
+margin-top: 2rem;
+background: #dedede;
+
+}
+table th,td {
+font-weight:400;
+padding:10px; 
+}
+
+
+table tbody tr{
+border-bottom: 1px solid #0000003d;
+}
+
+
+.small {
+	font-size: 10px;
+	padding: 0.1rem;
+}
+
+danger {
+color: #f61e46;
+}
+
+.form-control {
+    background: white;
+    margin: 2rem;
+    padding: 1rem;	
+    opacity:.8;
+	text-align:center;
+}
+
+.form-control label {
+	font-size: 12pt;
+	display:block;
+	text-transform: capitalize;
+	margin-top:0.6rem;
+	margin-bottom: 0.3;
+}
+.form-control input {
+	font-size: 14pt;
+	border:none;
+	border-bottom: 1px solid #6b6666; 
+	padding: 1rem;
+}
+
+.form-control input::placeholder{
+	text-transform: capitalize;
+	padding-bottom: 0.6rem;
+	text-align:center;
+}
+
+.form-control input:focus {
+border:none;
+}
+
+.alert {
+color:white;
+background: #b31818ab;
+padding: 0.3rem;
+}
+
+.primary {
+		color:white;
+		background: #949bf7ab;
+		padding: 0.3rem;
+		
+}
+.success {
+	color: white;
+	background: rgba(15, 112, 6, 0.61);
+	padding: 0.5rem;
+}
+
+
+.loader-cursor {
+	color: #868a8099;
+	font-size: 28px;
+	text-indent: -9999em;
+	overflow: hidden;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	margin: 72px auto;
+	position: relative;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+	animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+	0% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+	5%,
+	95% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+	10%,
+	59% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+	}
+	20% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+	}
+	38% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+	}
+	100% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+  }
+  @keyframes load6 {
+	0% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+	5%,
+	95% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+	10%,
+	59% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+	}
+	20% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+	}
+	38% {
+	  box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+	}
+	100% {
+	  box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+  }
+  @-webkit-keyframes round {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @keyframes round {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+ 
+
+  @keyframes toast-animation: {
+from {background-color: red;}
+  to {background-color: yellow;}
+  }
