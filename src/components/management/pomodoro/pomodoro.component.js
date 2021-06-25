@@ -35,8 +35,14 @@ class Pomodoro extends React.Component {
     }
 
     deletePomodoroState(id){
-        console.log('delete is called', id);
+        console.log('delete is starting',id);
+        this.setState( (data)=> { 
+            const filterData = data.pomodoros.filter(e => e.id!=id) 
+            data.pomodoros = filterData;
+            insertJSON('pomodoros', filterData);
+        })
     }
+
     render() {
        if(this.state.show) 
             return (<LoaderLinear color={primary} size={extraSmallSize}/>) ;

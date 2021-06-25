@@ -37,7 +37,7 @@ class PomodoroListChild extends React.Component {
                 <h3 style={{marginLeft:'8%'}}>{this.props.taskName}</h3>
                 <h2 className='center primary-font large-font'><Timer time = {this.props.time} type={this.state.type}/></h2>
                 <div className='center black'>
-                    <button className='btn btn-danger' onClick={this.props.deletePomodoroState(1)}><AiFillDelete/></button>
+                    <button className='btn btn-danger' onClick={()=> {this.props.deletePomodoroState(this.props.id)}}><AiFillDelete/></button>
                     <button className='btn' onClick={()=>{this.setState({type: this.state.type==='play'? 'pause': 'play'})}}> 
                     {this.state.type==='play'? <FiPause/>: <FaPlay />}
                      </button>

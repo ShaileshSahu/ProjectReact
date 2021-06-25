@@ -83,7 +83,7 @@ class Timer extends React.Component {
             case 'reset': {
                 let convertString = this.props.time.split(":");
                 let timeSecond =   parseInt(convertString[0])*3600 + parseInt(convertString[1])*60;        
-                this.setState({seconds: timeSecond, time: this.secondsToTime(timeSecond)});
+                if(this.timer !=0) this.setState({seconds: timeSecond, time: this.secondsToTime(timeSecond)});
                 this.stopTimer();
                 break;
             }

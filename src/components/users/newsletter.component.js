@@ -29,9 +29,6 @@ const NewsLetter = () => {
 
 
 const News = () => {
-    const { loading, list }=useFetch();
-    console.log('use effect', loading, list);
-
     return (<h1>New Letter trying handling the page !!</h1>);
 }
 
