@@ -1,0 +1,32 @@
+
+
+section .form {
+    margin-left: 20%;
+}
+
+section .form input, button {
+    margin-left: 2%;
+}
+
+section .form input[type=text]{
+    padding:0.3rem;
+}
+
+section .form input[type=time]{
+    padding:0.17rem;
+}
+
+
+.pomodoro-list-container{
+    display:flex;
+    justify-content:space-evenly;
+    padding:2rem;
+    flex-wrap: wrap;
+}
+
+.pomodoro-element{
+    background:rgb(238, 238, 238);
+    min-width:14rem;
+    border-radius: 6px;
+}
+

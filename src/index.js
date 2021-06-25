@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./index.css";
+import './styles/loader.css';
 import App from "./app.js";
 // stateless function component !!
 // JSX return and componet should always return it otherwise it will create the error to user 11;

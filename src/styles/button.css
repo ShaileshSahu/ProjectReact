@@ -1,0 +1,42 @@
+.btn {
+    text-transform: capitalize;
+    padding: .5rem;
+    border: none;
+    border-radius: 3px;
+    transition: 1s ease-in-out;
+}
+
+.btn-linear {
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    background:white;
+}
+
+.btn-primary {
+    color: white;
+    background-color:#212fefab;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #f5273a;   
+}
+
+.btn-warning {
+    color: white;
+    background-color: #f28401;
+}
+
+.btn-success {
+    color: white;
+    background-color: #5ab649;
+}
+
+.btn-dark {
+    color: white;
+    background-color: black;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}

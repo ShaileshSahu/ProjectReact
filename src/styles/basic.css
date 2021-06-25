@@ -131,3 +131,19 @@ color:#252323f0;
     transform: rotate(360deg);
   }
 }
+
+.management-container{
+  background:white;
+  margin-top: 3%;
+  margin-right:5%;
+  padding:0.2rem;
+}
+
+.pomodoro-container {
+  padding: 1rem;
+
+}
+
+.large-font {
+  font-size:45px;
+}

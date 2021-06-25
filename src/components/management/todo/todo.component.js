@@ -258,7 +258,7 @@ const TodoList = () => {
 						</td>
 						<td style={{maxWidth:'100px', overflow:'overlay'}}>{data.description ?? 'N/A' }</td>
 						<td>{moment(data.createdAt).format('Do MMMM YY')}</td>
-						<td > <span className={ data.priority === 'high' ? 'high-badge' : data.priority == 'low' ? 'low-bdge' : 'medium-badge'  }>{data.priority}</span></td>
+						<td > <span className={ data.priority === 'high' ? 'high-badge' : data.priority === 'low' ? 'low-badge' : 'medium-badge'  }>{data.priority}</span></td>
 						<td>
 							{ data.taskStatus !== 'complete' && (
 							<>

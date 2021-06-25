@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./index.css";
+import "./styles/button.css";
 import LeftSection from "./components/leftsection/leftsection.component";
 import RightSection from "./components/rightsection/rightsection.component";
 import Toast from './components/sharedcomponents/toast.component';

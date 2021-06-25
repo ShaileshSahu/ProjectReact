@@ -11,7 +11,6 @@ const Toast = () => {
 			toastParams,
 			setToastParams
 		} = useContext(ToastContext);
-		console.log('data', useContext(ToastContext));
 		const primary = "#0083ff";
 		const danger = "#f5273a";
 
@@ -61,7 +60,7 @@ const Toast = () => {
 					<span > {
 						toastParams.content
 					} 
-					</span> <icon style={{marginLeft:'30px' }}><AiOutlineClose/></icon>
+					</span> 
 					</span>)
 				} 
 				</>
