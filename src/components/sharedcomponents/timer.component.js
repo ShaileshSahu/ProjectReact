@@ -1,7 +1,5 @@
 // Timer worked component !!
-import React, {useState} from 'react';
-import {secondToTimeFormat} from '../../helpers/conversion';
-
+import React from 'react';
 
 class Timer extends React.Component {
     constructor(props) {
@@ -41,6 +39,8 @@ class Timer extends React.Component {
     startTimer() {
       if (  this.timer === 0 && this.state.seconds > 0) {
         this.timer = setInterval(this.countDown, 1000);
+        
+        
       }
     }
 
@@ -55,15 +55,19 @@ class Timer extends React.Component {
     }
   
     countDown() {
+      const audio = new Audio('https://soundbible.com/mp3/Busy%20Signal-SoundBible.com-1695161320.mp3');
+      
       // Remove one second, set state so a re-render happens.
       let seconds = this.state.seconds - 1;
       this.setState({
         time: this.secondsToTime(seconds),
         seconds: seconds,
       });
+      if(seconds < 10) audio.play();
       
       // Check if we're at zero.
       if (seconds === 0) { 
+        audio.pause();
         clearInterval(this.timer);
       }
     }
@@ -83,7 +87,7 @@ class Timer extends React.Component {
             case 'reset': {
                 let convertString = this.props.time.split(":");
                 let timeSecond =   parseInt(convertString[0])*3600 + parseInt(convertString[1])*60;        
-                if(this.timer !=0) this.setState({seconds: timeSecond, time: this.secondsToTime(timeSecond)});
+                if(this.timer !==0) this.setState({seconds: timeSecond, time: this.secondsToTime(timeSecond)});
                 this.stopTimer();
                 break;
             }

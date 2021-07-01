@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import newsDataSet from '../../contexts/news.store';
 import '../../index.css';
 import '../../styles/basic.css';
 import {API_NEWS_URL} from '../../adapters/new.js';
@@ -49,7 +48,7 @@ const New = ({imageReal,link,type, image,title, dataSource, date, shortStory }) 
 	const [show, setShow] = useState(false);
 	return (
 	<article className='newsChild'>
-	<img src={ imageReal && imageReal.includes('default') ? image : imageReal }/>
+	<img src={ imageReal && imageReal.includes('default') ? image : imageReal } alt={imageReal && imageReal.includes('default') ? image : imageReal}/>
 	<h3>{title}</h3>
 	<span>{date}</span>
 	<h5 className='primary'>{type}</h5>

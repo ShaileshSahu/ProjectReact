@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Todo from './todo/todo.component';
 import Pomodoro from './pomodoro/pomodoro.component';
 const Management = () => {
-	const [menu, setMenu] = useState( ['todo', 'pomodoro','habit tracker' ] );
+	const [menu] = useState( ['todo', 'pomodoro','habit tracker' ] );
 	const [selectedMenu, setSelectedMenu] = useState('todo');
 	
 
@@ -26,8 +26,8 @@ const MenuButton = (props) => {
 		return (
 		<div  style={{marginLeft: '60%'}}>
 			{
-			props.menu.map(e => {
-				return (<button  className={ e==props.selectedMenu ? ' btn btn-linear warning-font': 'btn btn-linear primary-font' } onClick={()=> props.setSelectedMenu(e)}>{e}</button>)
+			props.menu.map((e,index) => {
+				return (<button  key={index} className={ e===props.selectedMenu ? 'btn btn-linear warning-font': 'btn btn-linear primary-font' } onClick={()=> props.setSelectedMenu(e)}>{e}</button>)
 			})
 		}</div>);
 	

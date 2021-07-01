@@ -1,5 +1,4 @@
 import React from 'react';
-import { danger } from '../../../../constant';
 import {ToastContext} from './../../../../app';
 class PomodoroCreate extends React.Component {
     static contextType = ToastContext;

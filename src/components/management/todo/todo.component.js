@@ -211,7 +211,7 @@ const TodoList = () => {
 	useEffect(() =>{
 		setIsLoader(true);
 		setRefresh(true);
-	},[]); // intialize only one time !!
+	},[setRefresh]); // intialize only one time !!
 	
 	// currently this is used to fetch the api !!
 	if(refresh){
@@ -234,8 +234,8 @@ const TodoList = () => {
 
 	return (
 		<>
-		{isLoader && <h5 className='loader-cursor'></h5> }
-		<table class='todoTable'>
+		{isLoader && <span className='loader-cursor'></span> }
+		<table className='todoTable'>
 			<thead>
 				<tr>
 					<th>Todo</th>

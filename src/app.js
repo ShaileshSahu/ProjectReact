@@ -5,7 +5,6 @@ import "./styles/theme.css";
 import LeftSection from "./components/leftsection/leftsection.component";
 import RightSection from "./components/rightsection/rightsection.component";
 import Toast from './components/sharedcomponents/toast.component';
-import FlashCards from './components/sharedcomponents/flashCard.component';
 export const ToastContext = React.createContext();
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
 		<ToastContext.Provider value={{toastParams,setToastParams}}>
 			<Toast/>
 			<section className="container">
-			
 				<LeftSection />
 				<RightSection />
 			</section>

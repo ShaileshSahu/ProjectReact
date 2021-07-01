@@ -1,6 +1,5 @@
 import React, {useRef, useState, useContext} from 'react';
 import  '../../styles/newletter.css';
-import {useFetch} from '../sharedcomponents/fetch.component';
 import { ToastContext} from '../../app';
 
 const NewsLetter = () => {

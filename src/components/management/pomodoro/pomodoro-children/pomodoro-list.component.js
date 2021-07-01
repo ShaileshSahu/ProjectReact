@@ -8,16 +8,11 @@ import Timer from './../../../sharedcomponents/timer.component';
 
 
 class PomodoroList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     
     render(){
-        console.log(this.props);
         return (<>
         
-        <h3>PomodoroList</h3>
-            <section className='pomodoro-list-container'>
+           <section className='pomodoro-list-container'>
             { this.props.list.map(element => { return <PomodoroListChild {...element}  deletePomodoroState={this.props.deletePomodoroState}/>}) }         
             </section>
         </>);
