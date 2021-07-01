@@ -1,0 +1,30 @@
+
+.light-primary-theme {
+        background-color: #D4D9DC;
+        max-width: 30%;
+}
+
+
+.light-danger-theme {
+    background-color: #E6AFAE;
+    max-width: 30%;
+}
+
+.ligh-warning-theme {
+    background-color: #DCB997;
+    max-width: 30%;
+
+}
+
+
+.light-success-theme {
+    background-color:#AED9A9;
+    max-width: 30%;
+
+}
+
+.light-dark-theme {
+    background-color: #B0B0AE;
+    max-width: 30%;
+
+}
