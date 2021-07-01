@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import newsDataSet from '../../contexts/news.store';
 import '../../index.css';
 import '../../styles/basic.css';
 import {API_NEWS_URL} from '../../adapters/new.js';

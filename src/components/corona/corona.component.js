@@ -5,21 +5,22 @@ const Corona = () => {
 	const [corona, setCorona] = useState([]);
 	const [isLoader, setIsloader] = useState(true);
 	const fetchCorona = ()=> {
-		fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).
-			then(data=> { 
+		fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).then(data=> { 
 				setCorona(data.data);
 				setIsloader(false);
 			});
 	};
 
 	useEffect(()=> {fetchCorona()}, []);
+
 const removeElement = (id) => {
 const filter = corona.filter(data => data._id!==id);
 	setCorona(filter);
 
 };
 
-return isLoader ? <div className='loader'/> : (
+
+return isLoader ? <span className='loader'/> : (
 	
 	<div>
 	<article className='coronaContainer'>
@@ -27,14 +28,13 @@ return isLoader ? <div className='loader'/> : (
 	
 		<table>
 			<thead>
-				<th>
-					Location
-				</th>
+				<tr><th>Location</th>
 				<th>Date</th>
 				<th>Day</th>
 				<th>Weekly</th>
 				<th>Monthly</th>
 				<th>Report</th>
+				</tr>
 			</thead>
 			<tbody className='active'>
 				{

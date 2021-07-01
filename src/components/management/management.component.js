@@ -26,8 +26,8 @@ const MenuButton = (props) => {
 		return (
 		<div  style={{marginLeft: '60%'}}>
 			{
-			props.menu.map(e => {
-				return (<button  className={ e==props.selectedMenu ? ' btn btn-linear warning-font': 'btn btn-linear primary-font' } onClick={()=> props.setSelectedMenu(e)}>{e}</button>)
+			props.menu.map((e,index) => {
+				return (<button  key={index} className={ e==props.selectedMenu ? 'btn btn-linear warning-font': 'btn btn-linear primary-font' } onClick={()=> props.setSelectedMenu(e)}>{e}</button>)
 			})
 		}</div>);
 	

@@ -1,7 +1,6 @@
 import React, {
 	useContext
 } from "react";
-import { AiOutlineClose } from "react-icons/ai";
 
 import {
 	ToastContext

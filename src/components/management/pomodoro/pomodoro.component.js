@@ -36,7 +36,6 @@ class Pomodoro extends React.Component {
     }
 
     deletePomodoroState(id){
-        console.log('delete is starting',id);
         this.setState( (data)=> { 
             const filterData = data.pomodoros.filter(e => e.id!=id) 
             data.pomodoros = filterData;
