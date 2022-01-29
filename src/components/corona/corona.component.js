@@ -5,10 +5,10 @@ const Corona = () => {
 	const [corona, setCorona] = useState([]);
 	const [isLoader, setIsloader] = useState(true);
 	const fetchCorona = ()=> {
-		fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).then(data=> { 
-				setCorona(data.data);
-				setIsloader(false);
-			});
+		// fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).then(data=> { 
+		// 		setCorona(data.data);
+		// 		setIsloader(false);
+		// 	});
 	};
 
 	useEffect(()=> {fetchCorona()}, []);
@@ -26,7 +26,7 @@ return isLoader ? <span className='loader'/> : (
 	<article className='coronaContainer'>
 	<h1>Corona Cases</h1>
 	
-		<table>
+		{/* <table>
 			<thead>
 				<tr><th>Location</th>
 				<th>Date</th>
@@ -44,7 +44,7 @@ return isLoader ? <span className='loader'/> : (
 					})
 				}
 			</tbody>
-		</table>
+		</table> */}
 	</article>
 	</div>
 );
