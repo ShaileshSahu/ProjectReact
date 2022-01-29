@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 // import {CORONA_FETCH_API_URL} from '../../adapters/corona.js';
 import './corona.css';
 const Corona = () => {
-	const [corona] = useState([]);
+	// const [corona] = useState([]);
 	const [isLoader] = useState(true);
 	const fetchCorona = ()=> {
 		// fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).then(data=> { 
@@ -52,18 +52,18 @@ return isLoader ? <span className='loader'/> : (
 
 
 
-const  CoronaList = ({new_cases,total_cases, weekly_death, createdAt, _id, location, removeElement})=> {
+// const  CoronaList = ({new_cases,total_cases, weekly_death, createdAt, _id, location, removeElement})=> {
 
-	return (
-<tr>
-	<td>{location}</td>
-	<td>{createdAt}</td>
-		<td> {new_cases} </td>
-		<td>{weekly_death} </td>
-		<td>{total_cases}</td>
-		<td> <button className='dark danger' onClick={()=> removeElement(_id)}> X </button>
-		</td></tr>
-	);
+// 	return (
+// <tr>
+// 	<td>{location}</td>
+// 	<td>{createdAt}</td>
+// 		<td> {new_cases} </td>
+// 		<td>{weekly_death} </td>
+// 		<td>{total_cases}</td>
+// 		<td> <button className='dark danger' onClick={()=> removeElement(_id)}> X </button>
+// 		</td></tr>
+// 	);
 
-}
+// }
 export default Corona;
