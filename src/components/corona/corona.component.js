@@ -1,9 +1,9 @@
 import React, { useState, useEffect} from 'react';
-import {CORONA_FETCH_API_URL} from '../../adapters/corona.js';
+// import {CORONA_FETCH_API_URL} from '../../adapters/corona.js';
 import './corona.css';
 const Corona = () => {
-	const [corona, setCorona] = useState([]);
-	const [isLoader, setIsloader] = useState(true);
+	const [corona] = useState([]);
+	const [isLoader] = useState(true);
 	const fetchCorona = ()=> {
 		// fetch(CORONA_FETCH_API_URL+ '?limit=2000').then(data => data.json()).then(data=> { 
 		// 		setCorona(data.data);
@@ -13,11 +13,11 @@ const Corona = () => {
 
 	useEffect(()=> {fetchCorona()}, []);
 
-const removeElement = (id) => {
-const filter = corona.filter(data => data._id!==id);
-	setCorona(filter);
+// const removeElement = (id) => {
+// const filter = corona.filter(data => data._id!==id);
+// 	setCorona(filter);
 
-};
+// };
 
 
 return isLoader ? <span className='loader'/> : (
