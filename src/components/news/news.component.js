@@ -12,12 +12,10 @@ const News = () => {
 			fetch(API_NEWS_URL)
 				.then((data)=> { return data.json()})
 				.then(data => {
-					if(data.statusCode>=200 && data.statusCode <=299){
 						setNewsDataSet(data.data);
-						setIsLoading(false)
-					} else return  new Error('Error during fetching the data');
-					
-				});
+						setIsLoading(false);
+				}).catch(error => { return new Error('Error during fetch')});
+				
 		} catch (error) {
 			return <h3>Error Occured during fetching the result</h3>
 		}

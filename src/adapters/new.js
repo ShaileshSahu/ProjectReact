@@ -1,2 +1,2 @@
-export const API_NEWS_URL ='http://localhost:8082/v1/news';
+export const API_NEWS_URL ='https://crawl-server-izbjobamf-shaileshsahu.vercel.app/';
 
