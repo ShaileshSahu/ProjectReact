@@ -30,7 +30,7 @@ const News = () => {
 </h1>
 		<div className='loader'>loading...</div></>):(
 			<>
-			<img src="https://i.ibb.co/s2P7gxX/logo.png" alt="update it"></img>
+			<img src="https://i.ibb.co/5GpVs75/logo.png" alt="update it"></img>
 			
 		<article className='mainContainer'> 
 			{
