@@ -45,7 +45,6 @@ const News = () => {
 
 
 const New = ({imageReal,link,type, image,title, dataSource, date, shortStory }) => {
-	const [show, setShow] = useState(false);
 	return (
 	<article className='newsChild'>
 	<img src={ imageReal && imageReal.includes('default') ? image : imageReal } alt={imageReal && imageReal.includes('default') ? image : imageReal}/>
