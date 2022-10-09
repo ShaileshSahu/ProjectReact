@@ -8,15 +8,15 @@
 .newsMainContainer{
 	max-width: 750px;
 }
-.newsChild {max-width: 250px;
+.newsChild {max-width: 350px;
 padding: 0.666666rem;
 background-color:white;
 margin-top:2rem;
 }
 
 img {
-min-width:15.56rem;
-max-width:15.56rem;
+min-width:21.56rem;
+max-width:21.56rem;
 }
 @media (max-width: 800px) {
   .mainContainer {
