@@ -52,10 +52,10 @@ const New = ({imageReal,link,type, image,title, dataSource, date, shortStory }) 
 	<h3>{title}</h3>
 	<span>{date}</span>
 	<h5 className='primary'>{type}</h5>
-	<p> {!show ? shortStory.substring(0,60) : shortStory }
-		{ show && <a target='blank' href={link}> Read Full Story </a>}	
-		</p>
-        <button type="button" className="dark" style={{marginLeft:'34%'}}onClick={()=> setShow(!show)}>{show ? 'show less' : 'show more' }</button>
+	<p> { shortStory }
+		{  <a target='blank' href={link}> Read Full Story </a>}	
+	</p>
+        
 	<h5>{dataSource}</h5>
 	</article>
 )
