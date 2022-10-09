@@ -14,7 +14,7 @@ const App = () => {
 		<ToastContext.Provider value={{toastParams,setToastParams}}>
 			<Toast/>
 			<section className="container">
-				<LeftSection />
+				{/* <LeftSection /> */}
 				<RightSection />
 			</section>
 		</ToastContext.Provider>

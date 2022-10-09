@@ -25,10 +25,13 @@ const News = () => {
 	useEffect(()=> {intialize()},[]);
 
 	return isLoading? ( 
-<><h1 style={{textAlign:'center'}} className='newHeading'>News</h1>
+<><h1 style={{textAlign:'center'}} className='newHeading'>
+<img src="https://i.ibb.co/s2P7gxX/logo.png"></img>
+
+</h1>
 		<div className='loader'>loading...</div></>):(
 			<>
-			<h1 style={{textAlign:'center'}} className='newHeading'>News</h1>
+			<img src="https://i.ibb.co/s2P7gxX/logo.png"></img>
 			
 		<article className='mainContainer'> 
 			{
