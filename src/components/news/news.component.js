@@ -26,12 +26,11 @@ const News = () => {
 
 	return isLoading? ( 
 <><h1 style={{textAlign:'center'}} className='newHeading'>
-<img src="https://i.ibb.co/s2P7gxX/logo.png"></img>
 
 </h1>
 		<div className='loader'>loading...</div></>):(
 			<>
-			<img src="https://i.ibb.co/s2P7gxX/logo.png"></img>
+			<img src="https://i.ibb.co/s2P7gxX/logo.png" alt="update it"></img>
 			
 		<article className='mainContainer'> 
 			{
